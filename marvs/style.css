@@ -1,0 +1,3 @@
+img:not(.object-contain) {
+  object-fit: cover;
+}

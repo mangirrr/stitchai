@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "on-secondary-fixed-variant": "#354d31", "inverse-primary": "#acd0ad", "on-background": "#1b1c18", "primary-fixed": "#c8ecc8", "on-primary-fixed": "#03210b", "secondary": "#4c6548", "inverse-on-surface": "#f3f1ea", "surface-bright": "#fbf9f2", "outline": "#737971", "background": "#fbf9f2", "on-tertiary-container": "#ddebdd", "tertiary-fixed": "#d8e6d8", "secondary-container": "#ceeac5", "tertiary": "#465348", "surface-container-highest": "#e4e2dc", "on-tertiary-fixed": "#131e16", "tertiary-fixed-dim": "#bccabd", "on-surface": "#1b1c18", "surface": "#fbf9f2", "primary-fixed-dim": "#acd0ad", "on-primary-fixed-variant": "#2f4e33", "on-surface-variant": "#424841", "surface-variant": "#e4e2dc", "inverse-surface": "#30312c", "surface-container": "#f0eee7", "on-error": "#ffffff", "primary-container": "#4f6f52", "secondary-fixed": "#ceeac5", "on-secondary-fixed": "#0a2009", "on-tertiary": "#ffffff", "primary": "#37563b", "error": "#ba1a1a", "surface-container-high": "#eae8e1", "on-primary-container": "#ccf0cc", "on-secondary-container": "#526b4d", "surface-container-low": "#f6f4ed", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#3d4a40", "surface-tint": "#466649", "error-container": "#ffdad6", "secondary-fixed-dim": "#b3ceab", "on-primary": "#ffffff", "surface-dim": "#dcdad3", "surface-container-lowest": "#ffffff", "tertiary-container": "#5e6b60", "outline-variant": "#c2c8bf" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-xs": "0.375rem", "space-sm": "0.75rem", "space-md": "1.25rem", "space-xl": "3.5rem", "gutter": "1.5rem", "space-lg": "2rem", "margin": "3rem", "gutter-mobile": "1rem" }, "fontFamily": { "headline-sm": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "title-md": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "display": [ "Playfair Display" ], "headline-lg": [ "Playfair Display" ], "label-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "display-mobile": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "title-md": [ "17px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "display": [ "56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "500" } ], "display-mobile": [ "38px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ] } } } };</script><link href="style.css" rel="stylesheet"/></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(79,111,82,0.06)]"><div class="h-20 max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><span class="flex items-center justify-center w-9 h-9 rounded-full bg-secondary-container text-primary font-headline-sm text-headline-sm select-none">🌿</span><a class="font-headline-sm text-headline-sm text-primary tracking-tight hover:opacity-85 transition-opacity" data-path="portofolio" href="#">Portofolio Pribadi</a></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-secondary-container text-primary font-label-md rounded-full"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="profil" href="#profil">Profil</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="tentang" href="#tentang">Tentang Aku</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="series" href="#series">Series</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="film" href="#film">Film</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="musik" href="#musik">Musik</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="kemampuan" href="#kemampuan">Kemampuan</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="project" href="#project">Project</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="kontak" href="#kontak">Kontak</a></nav><div class="flex items-center gap-space-sm"><div class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/60 text-primary font-label-md text-label-md select-none"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>Tersedia untuk menyapa 👋</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- 01. HERO / PROFIL -->
+<section class="relative w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl flex flex-col items-center text-center" id="profil">
+<!-- Ambient Botanical Backing -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="w-full max-w-3xl bg-surface-container-low rounded-xl p-space-md lg:p-space-xl flex flex-col items-center shadow-sm">
+<!-- Profile Photo Frame -->
+<div class="relative group mb-space-md">
+<div class="w-36 h-36 rounded-full bg-secondary-container p-1 shadow-inner flex items-center justify-center overflow-hidden">
+<img class="w-full h-full rounded-full object-cover" data-alt="A gentle, warm cinematic portrait of a creative individual in natural sunlight surrounded by soft indoor plants, with tranquil expression, muted sage green and warm cream tones, artisan film texture" src="../assets/profile.jpg"/>
+</div>
+<span class="absolute bottom-1 right-2 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</span>
+</div>
+<!-- Identity & Nickname -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-primary font-label-md text-label-md mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Panggilan: MANGIR</span>
+</div>
+<h1 class="font-display text-headline-lg lg:text-display text-primary tracking-tight mt-1 mb-space-xs">
+        MANGIR DANUMOYO PRASETYO WENING
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed mb-space-lg">
+        Menjelajahi dunia lewat cerita, series & movie, dan pemahaman tentang dunia berjalan.
+      </p>
+<!-- Quick Social & Contact Chips -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs mb-space-lg">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity shadow-sm" href="#kontak">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Sapa Saya</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-secondary-container transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Instagram</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-secondary-container transition-colors" href="#project">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+<span>Lihat Karya</span>
+</a>
+</div>
+<!-- Scroll indicator -->
+<a class="inline-flex items-center gap-2 font-label-sm text-label-sm text-secondary hover:text-primary transition-colors tracking-wide" href="#tentang">
+<span>Gulir ke Bawah</span>
+<span class="material-symbols-outlined text-[16px] animate-bounce">arrow_downward</span>
+</a>
+</div>
+</section>
+<!-- 02. TENTANG AKU -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="tentang">
+<div class="mb-space-lg">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">01 / Tentang Diriku</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Mengenal Lebih Dekat</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left: Quick Facts Bento -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span>Identitas Ringkas</span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-md text-body-md">
+<div class="p-3 rounded-DEFAULT bg-surface-container-lowest flex justify-between items-center">
+<span class="text-on-surface-variant font-label-md text-label-md">Nama Lengkap</span>
+<span class="text-primary font-semibold">MANGIR DANUMOYO PRASETYO WENING</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-lowest flex justify-between items-center">
+<span class="text-on-surface-variant font-label-md text-label-md">Usia &amp; Lahir</span>
+<span class="text-primary font-semibold">16 Tahun • 23 Januari 2010</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-lowest flex justify-between items-center">
+<span class="text-on-surface-variant font-label-md text-label-md">Domisili</span>
+<span class="text-primary font-semibold">Jakarta, Indonesia</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">interests</span>
+<span>Aktivitas &amp; Hobi</span>
+</div>
+<div class="flex flex-wrap gap-2 mt-space-xs">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Menonton Series</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Main Game</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Mendengarkan Musik</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Study bahasa thailand & mandarin</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+<span>Karakteristik</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Penyabar</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Reflektif</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Mudah berteman</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest p-2 rounded-DEFAULT">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Cute</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Narrative Bio -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col justify-between h-full">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md tracking-wider uppercase">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Catatan Refleksi</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            สวัสดีครับ! Aku percaya bahwa hal-hal sederhana seringkali memuat makna paling abadi. Keseharian aku mengalir di antara rutinitas tenang, dan apresiasi tulus terhadap bagaimana cerita disampaikan—baik melalui bingkai sinema, untaian melodi.
+          </p>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            Di sela waktu luang, aku senang larut dalam episode demi episode series favorit, menyelami motivasi setiap tokoh dan kehangatan relasi manusia. Kegemaran ini memicu dorongan rasa ingin tahu yang lebih jauh: belajar merangkai dunia kecil sendiri dengan menata logika mekanik sederhana yang menyenangkan untuk dimainkan.
+          </p>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            Portofolio ini dirancang bukan sekadar etalase formal, melainkan ruang arsip pribadi yang bernapas. Harapan aku
+             adalah terus merawat rasa takjub pada hal baru, bertumbuh secara organik, serta selalu terbuka untuk menyapa rekan-rekan yang berbagi kecintaan pada cerita dan kreativitas.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between bg-surface-container-lowest/60 p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">local_florist</span>
+<span class="font-label-md text-label-md text-primary">Hidup sederhana, bertumbuh teratur, Bebas untuk hidup.</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Refleksi 2026-</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 03. SERIES FAVORIT -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="series">
+<div class="mb-space-lg">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">02 / Koleksi Tontonan</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">10 Series Favorit Sepanjang Masa</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        Kisah-kisah episodik yang selalu meninggalkan kesan mendalam dan menemani malam hari.
+      </p>
+</div>
+<!-- 10 Series Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-space-sm">
+<!-- 1. Secret Relationship -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A vintage Korean alleyway in the 1980s with warm neighborhood lanterns, bicycles, retro brick walls, cozy winter twilight atmosphere, serene film grain" src="../assets/series/series-1.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2025</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Secret Relationship</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">1 orang yang di sukai 3 cowok lainnya, masing-masing memiliki sifatnya tersendiri.</p>
+</div>
+</div>
+<!-- 2. Fleabag -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A witty London cafe interior with vintage teacups, guinea pig motif decor, soft overcast natural lighting, artistic dry wit editorial composition" src="../assets/series/series-2.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2026</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Double Helix</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah anak SMA yang ingin membangun hubungannya kembali setelah 5 tahun.</p>
+</div>
+</div>
+<!-- 3. Dark -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A mystical dense foggy German forest cave with a lone yellow raincoat figure standing beneath mossy pine trees, moody atmospheric cinematic mystery" src="../assets/series/series-3.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2026</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Sammy's Children</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah cinta dimulai dari dunia bawah</p>
+</div>
+</div>
+<!-- 4. Ted Lasso -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A sunlit English football pitch locker room with handwritten yellow believe poster, biscuits in a pink pastry box, warm kindness aesthetic" src="../assets/series/series-4.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2025</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">The Next Prince</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Pangeran dan pengawalnya yang berakhir menjadi cinta yang abadi.</p>
+</div>
+</div>
+<!-- 5. The Bear -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="An intense artistic Chicago kitchen interior with stainless steel counters, copper pots, ticket printer tape, soft atmospheric steam, warm documentary photography" src="../assets/series/series-5.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2025</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Revenge Love</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Cerita tentang cinta yang tumbuh dari dendam dan pengorbanan.</p>
+</div>
+</div>
+<!-- 6. Anne with an E -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Green Gables pastoral countryside with lush wild blooming apple trees, vintage farm fences, warm golden hour sunbeams, nostalgic idyllic scenery" src="../assets/series/series-6.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2024</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Your Sky</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah tentang seorang pemuda yang mengejar impian dan menemukan cinta di langit yang luas.</p>
+</div>
+</div>
+<!-- 7. Hospital Playlist -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Five doctor friends practicing music instruments together in a cozy band basement with vintage amplifiers, warm laughing camaraderie, soft ambient light" src="../assets/series/series-7.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2026</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Love Upon a Time</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah cinta yang tumbuh dari kenangan masa lalu dan keinginan untuk memperbaiki masa depan.</p>
+</div>
+</div>
+<!-- 8. Stranger Things -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Retro 1980s Indiana suburban street with neon signs, kids riding bicycles at dusk, subtle retro synthwave sci-fi mystery atmosphere, cinematic amber tones" src="../assets/series/series-8.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2025</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Khemjira</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah tentang seorang bernama khem yang terus di hantui oleh hantu ramphung untuk membalas dendam di masa lalunya.</p>
+</div>
+</div>
+<!-- 9. Arcane -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Stunning steampunk Zaun and Piltover city vista with glowing hextech crystals, intricate oil-painting visual style, deep emerald and twilight violet hues" src="../assets/series/series-9.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2026</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Duang With You</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah tentang seorang pemuda yang mengejar cinta di tengah kehidupan.</p>
+</div>
+</div>
+<!-- 10. Gilmore Girls -->
+<div class="group bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+<div class="relative w-full aspect-[2/3] rounded-DEFAULT overflow-hidden bg-secondary-container mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Idyllic autumn Connecticut small town square with yellow maples, vintage diner storefront with coffee cups, cozy autumn scarves, warm editorial nostalgia" src="../assets/series/series-10.jpg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary">2024</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary line-clamp-1">Love for Love's sake</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Kisah cinta yang tumbuh dari kenangan masa lalu dan keinginan untuk memperbaiki masa depan.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 04. FILM FAVORIT -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="film">
+<div class="mb-space-lg">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">03 / Sinema Pilihan</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">5 Film yang Selalu Berkesan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        Karya layar lebar yang memberikan sudut pandang baru tentang kehidupan dan waktu.
+      </p>
+</div>
+<!-- 5 Showcase Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- 1. Spirited Away -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg flex flex-col md:flex-row gap-space-md items-center shadow-sm">
+<div class="w-full md:w-72 h-44 md:h-48 rounded-lg overflow-hidden shrink-0 bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Studio Ghibli style mystical bathhouse at twilight with paper lanterns reflected across flooded train tracks, soft watercolor clouds, serene nostalgic magic" src="../assets/film/film-1.jpg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center gap-2 mb-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Sci-Fi</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Aksi</span>
+<span class="font-label-sm text-label-sm text-outline">2018</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Avengers: Infinity War</h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Bercerita tentang para Avengers di bumi dan luar angkasa yang harus menghentikan invasi besar-besaran Thanos yang ingin melenyapkan separuh populasi semesta.
+          </p>
+</div>
+</div>
+<!-- 2. Little Forest -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg flex flex-col md:flex-row gap-space-md items-center shadow-sm">
+<div class="w-full md:w-72 h-44 md:h-48 rounded-lg overflow-hidden shrink-0 bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Rustic rural Korean kitchen table with freshly harvested garden vegetables, homemade warm bean soup, sunlight on wooden cutting board, serene slow-life aesthetic" src="../assets/film/film-2.jpg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center gap-2 mb-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Sci-Fi</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Fantasi</span>
+<span class="font-label-sm text-label-sm text-outline">2022</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Dr. Strange in the Multiverse of Madness</h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Bercerita tentang Doctor Strange yang harus melintassi berbagai realitas alternatif multisemesta demi melindungi seorang gadis remaja dari kejaran Scarlet Witch yang berubah akibat sihir Darkhold.
+          </p>
+</div>
+</div>
+<!-- 3. Past Lives -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg flex flex-col md:flex-row gap-space-md items-center shadow-sm">
+<div class="w-full md:w-72 h-44 md:h-48 rounded-lg overflow-hidden shrink-0 bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Two people having a quiet contemplative conversation along the Brooklyn waterfront at sunset with Manhattan skyline in soft focus, poignant tender lighting" src="../assets/film/film-3.jpg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center gap-2 mb-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Sci-Fi</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Aksi</span>
+<span class="font-label-sm text-label-sm text-outline">2019</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Avengers: End Game</h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Bercerita tentang sisa-sia anggota Avengers yang hancur pasca kekalahan, lalu mempertaruhkan segalanya untuk membalikkan keadaan melalui rencana penjelajahan waktu.
+          </p>
+</div>
+</div>
+<!-- 4. About Time -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg flex flex-col md:flex-row gap-space-md items-center shadow-sm">
+<div class="w-full md:w-72 h-44 md:h-48 rounded-lg overflow-hidden shrink-0 bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="A rainy wedding celebration under a red canopy with joyful smiling people, warm Cornwall coastal breeze, paper lanterns glowing in storm light, heartwarming romance" src="../assets/film/film-4.jpg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center gap-2 mb-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Horor</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Misteri</span>
+<span class="font-label-sm text-label-sm text-outline">2016</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">The Conjuring 2</h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Bercerita tentang pasangan suami istri Ed dan Lorraine Warren yang menjadi ahli dalam bidang paranormal dan membantu sebuah keluarga yang diteror oleh entittas iblis berpakaian biarawati.
+          </p>
+</div>
+</div>
+<!-- 5. Interstellar -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg flex flex-col md:flex-row gap-space-md items-center shadow-sm">
+<div class="w-full md:w-72 h-44 md:h-48 rounded-lg overflow-hidden shrink-0 bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="A lone spacecraft drifting past a colossal shimmering golden accretion disk of a black hole, cosmic stardust silence, awe-inspiring cinematic cinematography" src="../assets/film/film-5.jpg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center gap-2 mb-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Animasi</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Komedi</span>
+<span class="font-label-sm text-label-sm text-outline">2016</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Kung Fu Panda 3</h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Bercerita tentang Po yang bersatu kembali dengan ayah kandungnya, lalu harus melatih sebuah desa yang penuh dengan panda lamban menjadi pasukan kung fu demi mengalahkan prajurit roh jahat.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 05. MUSIK FAVORIT -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="musik">
+<div class="mb-space-lg">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">04 / Ruang Dengar</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">5 Lagu &amp; Musik Pengiring Hari</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        Melodi yang paling sering berputar di daftar putar saat bersantai atau mencari inspirasi.
+      </p>
+</div>
+<!-- 5 Audio Player Sleeve Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Track 1: Sore -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-secondary-container mb-space-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Vinyl record sleeve with subtle minimalist botanical illustration, dried pressed fern leaves on linen paper, soft ambient green aesthetic" src="../assets/musik/musik-1.jpg"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Dangerous Woman</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Track 01</span>
+</div>
+<p class="font-label-md text-label-md text-secondary mb-space-xs">Ariana Grande</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Lagu favorit karena ariana grande, diputar saat sedang ingin bersantai.
+          </p>
+</div>
+<!-- Progress wave accent -->
+<div class="pt-space-sm mt-space-sm">
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-2/3"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>02:14</span>
+<span>03:45</span>
+</div>
+</div>
+</div>
+<!-- Track 2: Resonansi -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-secondary-container mb-space-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Minimalist abstract acoustic guitar soundboard with gentle sunlight beams and soft dust motes, warm wooden texture, serene artistic album cover" src="../assets/musik/musik-2.jpg"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Berpayung Tuhan</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Track 02</span>
+</div>
+<p class="font-label-md text-label-md text-secondary mb-space-xs">Nadin Amizah</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Harmoni vokal yang lembut mengalir pelan, dengan nada yang selalu membuat aku tenang.
+          </p>
+</div>
+<div class="pt-space-sm mt-space-sm">
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-1/2"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>01:50</span>
+<span>04:12</span>
+</div>
+</div>
+</div>
+<!-- Track 3: Sanctuary -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-secondary-container mb-space-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Soft hazy retro ambient sky with muted pastel clouds, gentle warm vintage film grading, peaceful indie pop atmosphere" src="../assets/musik/musik-3.jpg"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Driver License</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Track 03</span>
+</div>
+<p class="font-label-md text-label-md text-secondary mb-space-xs">Olivia Rodrigo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Saat seorang putus di dalam mobil yang sedang melaju, intonasi nada dan tempo bikin lagu ini sampe nusuk.
+          </p>
+</div>
+<div class="pt-space-sm mt-space-sm">
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-3/4"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>02:22</span>
+<span>03:00</span>
+</div>
+</div>
+</div>
+<!-- Track 4: Yellow -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-secondary-container mb-space-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A calm northern shoreline at dawn with gentle waves lapping on dark wet sand under a soft golden twilight sky, emotional British rock aesthetic" src="../assets/musik/musik-4.jpg"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Locked Out of Heaven</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Track 04</span>
+</div>
+<p class="font-label-md text-label-md text-secondary mb-space-xs">Bruno Mars</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Karya bruno mars yang penuh energi dan membuat orang jatuh tepar akibat lagunya yang sesakkk.
+          </p>
+</div>
+<div class="pt-space-sm mt-space-sm">
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-4/5"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>03:30</span>
+<span>04:29</span>
+</div>
+</div>
+</div>
+<!-- Track 5: Sparks -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-secondary-container mb-space-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A small glowing candle on an aged wooden writing desk surrounded by vintage notebooks and pressed leaves, tranquil night atmosphere" src="../assets/musik/musik-5.jpg"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Great Expectations</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Track 05</span>
+</div>
+<p class="font-label-md text-label-md text-secondary mb-space-xs">Sienna Spiro</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Lagu yang seperti menunggu janji-janji manis yang di ucapkan oleh seseorang yang sangat dicintai.
+          </p>
+</div>
+<div class="pt-space-sm mt-space-sm">
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-1/3"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>01:12</span>
+<span>03:47</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 06. KEMAMPUAN (EXACTLY ONE LARGE CARD) -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="kemampuan">
+<div class="mb-space-lg">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">05 / Ruang Eksplorasi Teknis</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Kemampuan yang Sedang Dipelajari</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        Bukan tentang gelar profesional, melainkan hobi kreatif meracik dunia interaktif kecil.
+      </p>
+</div>
+<!-- The Single Highlight Card -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md lg:p-space-xl shadow-sm flex flex-col md:flex-row items-center gap-space-lg">
+<div class="w-32 h-32 md:w-44 md:h-44 rounded-2xl bg-secondary-container p-space-sm flex items-center justify-center shrink-0 shadow-inner">
+<img alt="Godot Engine Icon" class="w-full h-full object-contain" src="../assets/stitch/project/godot-icon.png"/>
+</div>
+<div class="flex flex-col flex-grow text-left">
+<div class="flex flex-wrap items-center gap-2 mb-space-xs">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-md text-label-md">Game Engine 2D • Open Source</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Eksplorasi Aktif</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">Godot Engine</h3>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed mb-space-md">
+          Suka bereksperimen menciptakan game 2D sederhana di waktu luang—mulai dari mekanik pergerakan karakter lucu hingga puzzle santai menggunakan GDScript di Godot Engine.
+        </p>
+<!-- Feature Pills -->
+<div class="flex flex-wrap gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Simpel &amp; Ringan</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>Logika GDScript</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">brush</span>
+<span>Eksplorasi Pixel Art &amp; Animasi 2D</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 07. PROJECT (ONLY 2 CARDS) -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="project">
+<div class="mb-space-lg">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">06 / Karya &amp; Eksplorasi</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Dua Proyek yang Dikerjakan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        Eksplorasi sederhana yang selesai dibuat dan sarat makna personal.
+      </p>
+</div>
+<!-- 2 Projects Side-by-Side -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Card A: Project Sekolah -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<!-- Screenshot Mockup -->
+<div class="w-full aspect-video rounded-lg overflow-hidden bg-surface-container-lowest mb-space-md relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Charming 2D pixel art platformer game screenshot showing a cute little cat character jumping between grassy floating islands with coins and keys, cozy sage green color palette" src="../assets/stitch/project/game-screenshot.jpg"/>
+<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm shadow">
+              Game 2D
+            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">
+            Project Sekolah: [JUDUL GAME 2D]
+          </h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-space-md">
+            Game platformer 2D tentang petualangan seekor kucing kecil mencari jalan pulang ke rumah pemiliknya. Pemain melewati rintangan lompat tebing dan mengumpulkan kunci rahasia untuk membuka gerbang setiap level.
+          </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-space-sm">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Godot Engine (2D)</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">GDScript</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Pixel Art</span>
+</div>
+</div>
+<!-- Card B: Website Portofolio Pribadi -->
+<div class="bg-surface-container-low rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<!-- Screenshot Mockup (Browser Window) -->
+<div class="w-full aspect-video rounded-lg overflow-hidden bg-surface-container-lowest mb-space-md relative flex flex-col shadow-inner">
+<div class="h-6 bg-surface-container px-3 flex items-center gap-1.5 shrink-0">
+<span class="w-2.5 h-2.5 rounded-full bg-error/60"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary/40"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary/40"></span>
+</div>
+<div class="flex-grow overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Clean minimal botanical personal portfolio website interface mockup on screen with sage green accents and cream linen background, editorial typography layout" src="../assets/stitch/project/portfolio-mockup.jpg"/>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">
+            Website Portofolio Pribadi
+          </h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-space-md">
+            Website portofolio tentang diriku yang berisi biodata, series, film, dan musik favorit dengan tema hijau soft yang ramah di mata serta memberikan pengalaman berkunjung yang menenangkan.
+          </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-space-sm">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">HTML</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">CSS</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">JavaScript</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">GitHub</span>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Vercel</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 08. KONTAK & MEDIA SOSIAL -->
+<section class="w-full max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl" id="kontak">
+<div class="mb-space-lg text-center">
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase">07 / Mari Terhubung</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Sapa atau Tinggalkan Pesan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-1">
+        Pintu selalu terbuka untuk obrolan santai, rekomendasi tontonan baru, atau sekadar bertukar kabar.
+      </p>
+</div>
+<div class="max-w-2xl mx-auto bg-surface-container-low rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Email Box with Copy Feature -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline">Surel / Email</p>
+<p class="font-title-md text-title-md text-primary select-all" id="emailText">mangirdmpw@gmail.com</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary font-label-md text-label-md hover:opacity-85 transition-opacity shrink-0" id="copyEmailBtn" onclick="copyEmail()">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyEmailLabel">Salin Email</span>
+</button>
+</div>
+<!-- WhatsApp Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline">WhatsApp</p>
+<p class="font-title-md text-title-md text-primary">+62 895-3348-16800</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity shrink-0" href="https://wa.me/6281200000000" rel="noopener noreferrer" target="_blank">
+<span>Kirim Pesan</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Social Media Buttons -->
+<div class="pt-space-xs flex flex-col items-center">
+<p class="font-label-md text-label-md text-on-surface-variant mb-space-sm">Atau mau moots media sosialku:</p>
+<div class="flex flex-wrap items-center justify-center gap-space-xs">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Instagram: @Marvissarapnatikum</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
+<span>TikTok: @Marvissarapnatikum</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span>X: @Secret</span>
+</a>
+</div>
+</div>
+<!-- Warm Closing Line -->
+<div class="pt-space-md text-center border-t border-transparent text-on-surface-variant">
+<p class="font-body-md text-body-md font-medium text-primary mb-1">
+          Dibuat dengan 💚 oleh Mangir
+        </p>
+<p class="font-body-sm text-body-sm text-outline">
+          Semua preferensi dan karya didokumentasikan dengan penuh powerfull • 2026
+        </p>
+</div>
+</div>
+</section>
+<!-- Inline Script for Copy Email Micro-interaction -->
+<script>
+    function copyEmail() {
+      const emailElem = document.getElementById('emailText');
+      const labelElem = document.getElementById('copyEmailLabel');
+      if (emailElem && labelElem) {
+        const text = emailElem.innerText.replace('[EMAIL - ', '').replace(']', '').trim();
+        navigator.clipboard.writeText(text).then(() => {
+          labelElem.innerText = 'Tersalin! ✨';
+          setTimeout(() => {
+            labelElem.innerText = 'Salin Email';
+          }, 2000);
+        }).catch(() => {
+          labelElem.innerText = 'Tersalin!';
+          setTimeout(() => {
+            labelElem.innerText = 'Salin Email';
+          }, 2000);
+        });
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(79,111,82,0.03)] py-space-xl"><div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex flex-col gap-1"><p class="font-title-md text-title-md text-primary font-medium">🌿 Portofolio Pribadi</p><p class="font-body-sm text-body-sm text-on-surface-variant">Dibuat dengan 💚 oleh [NAMA] • Hak Cipta &amp; Hak Eksplorasi Pribadi</p></div><div class="flex items-center gap-space-sm text-on-surface-variant"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#profil">Kembali ke Atas</a></div></div></footer></body></html>
